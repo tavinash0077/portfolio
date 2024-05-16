@@ -31,6 +31,8 @@ const Header = () => {
         }
     ]);
 
+    const cvLink = "https://drive.google.com/file/d/1tQznyQfn3M43noijdc0zCgBabhCxry4Q/view?usp=drive_link";
+
     return (
         <>
             <div className="h-16 main flex justify-between items-center px-16 bg-gray-100">
@@ -46,7 +48,7 @@ const Header = () => {
                 </div>
                 <div>
                     {/* buttons*/}
-                    <button className='px-3 py-2 bg-orange-500 shadow rounded-full font-semibold text-sm'>Download CV</button>
+                    <a href={cvLink} className='px-3 py-2 bg-orange-500 shadow rounded-full font-semibold text-sm' target="_blank" rel="noopener noreferrer">Download CV</a>
                 </div>
             </div>
         </>
